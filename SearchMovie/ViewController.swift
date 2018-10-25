@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblencuentra: UILabel!
     @IBOutlet weak var aicargar: UIActivityIndicatorView!
     
-    var urlMovie = "https://www.omdbapi.com/?apikey=cf43d6bc&t=ii"
+    var urlMovie = "https://www.omdbapi.com/?apikey=cf43d6bc&t=i"
     var Pelicula : String = ""
     var encontrada : String = ""
     
@@ -45,36 +45,51 @@ class ViewController: UIViewController {
             self.lbltitulo.text = ""
             self.lblano.text = ""
             self.lblrated.text = ""
-            self.lblano.text = ""
-            self.lblano.text = ""
-            self.lblano.text = ""
+            self.lblduracion.text = ""
+            self.lblgenero.text = ""
+            self.lbldirector.text = ""
             
             
             
             if let dictRespuesta = response.result.value as? NSDictionary{
-                if let nombre = dictRespuesta.value(forKey: "Title") as? String{
-                    self.lbltitulo.text = nombre
+                
+                if let respuesta = dictRespuesta.value(forKey: "Response") as? String {
+                    self.encontrada = respuesta
                 }
                 
-                if let ano = dictRespuesta.value(forKey: "Year") as? String{
-                    self.lblano.text = ano
+                if self.encontrada == "True" {
+                    
+                    if let nombre = dictRespuesta.value(forKey: "Title") as? String{
+                        self.lbltitulo.text = nombre
+                    }
+                    
+                    if let ano = dictRespuesta.value(forKey: "Year") as? String{
+                        self.lblano.text = ano
+                    }
+                    
+                    if let Rated = dictRespuesta.value(forKey: "Rated") as? String{
+                        self.lblrated.text = Rated
+                    }
+                    
+                    if let Duracion = dictRespuesta.value(forKey: "Runtime") as? String{
+                        self.lblduracion.text = Duracion
+                    }
+                    
+                    if let Genero = dictRespuesta.value(forKey: "Genre") as? String{
+                        self.lblgenero.text = Genero
+                    }
+                    
+                    if let Director = dictRespuesta.value(forKey: "Director") as? String{
+                        self.lbldirector.text = Director
+                    }
+                    
+                } else {
+                    self.lblencuentra.text = "Pelicula no encontrada"
+                    self.Pelicula = ""
+                    self.aicargar.stopAnimating()
                 }
                 
-                if let Rated = dictRespuesta.value(forKey: "Rated") as? String{
-                    self.lblrated.text = Rated
-                }
                 
-                if let Duracion = dictRespuesta.value(forKey: "Runtime") as? String{
-                    self.lblduracion.text = Duracion
-                }
-                
-                if let Genero = dictRespuesta.value(forKey: "Genre") as? String{
-                    self.lblgenero.text = Genero
-                }
-                
-                if let Director = dictRespuesta.value(forKey: "Director") as? String{
-                    self.lbldirector.text = Director
-                }
                 
             }
         }
