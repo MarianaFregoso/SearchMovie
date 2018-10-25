@@ -38,6 +38,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func doTapBuscar(_ sender: Any) {
+        
         aicargar.startAnimating()
         
         Alamofire.request(urlMovie).responseJSON {response in
