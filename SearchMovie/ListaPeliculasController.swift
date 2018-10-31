@@ -23,7 +23,7 @@ class ListaPeliculasController : UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "cellPelicula") as! CellPeliculasController
+        let celda = tableView.dequeueReusableCell(withIdentifier: "CellPelicula") as! CellPeliculasController
         celda.lbltitulo.text = DatosPeliculas.peliculas[indexPath.row].nombre
         celda.lblano.text = DatosPeliculas.peliculas[indexPath.row].ano
         return celda
@@ -51,6 +51,7 @@ class ListaPeliculasController : UIViewController, UITableViewDataSource, UITabl
                     self.encontrada = respuesta
                 }
                 if self.encontrada == "True" {
+                    DatosPeliculas.peliculas.removeAll()
                     if let buscar = dictRespuesta.value(forKey: "Search") as? NSArray {
                         for i in buscar{
                             if let dictResultado = i as? NSDictionary{
@@ -87,3 +88,5 @@ class ListaPeliculasController : UIViewController, UITableViewDataSource, UITabl
             
     }
 
+}
+}

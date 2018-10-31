@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 class  DatosPeliculas {
-    static var peliculas : [Peliculas] = [Peliculas(nombre: "a", ano: "1234", duracion: "q", rated: "w", director: "e", genero: "s")]
+    static var peliculas : [Peliculas] = [Peliculas(nombre: "w", id: "jashfas", ano: "wqer", duracion: "qwe", rated: "q", director: "w", genero: "e")]
 }
