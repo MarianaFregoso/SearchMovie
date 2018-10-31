@@ -192,6 +192,10 @@
                                     <outlet property="delegate" destination="JXb-0H-9wJ" id="w3p-QD-mYP"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="RG0-iO-aQl">
+                                <rect key="frame" x="227" y="136" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.81300599093264247" green="0.45836370391209569" blue="0.70377771237859843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="1Tb-rF-3bZ"/>
