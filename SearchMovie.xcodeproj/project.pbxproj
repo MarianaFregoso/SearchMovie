@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0717F0218A0D9400B8FAA0 /* PeliculasDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0717EF218A0D9400B8FAA0 /* PeliculasDetalle.swift */; };
 		3D3AF57C2182571300154F72 /* ListaPeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3AF57B2182571300154F72 /* ListaPeliculasController.swift */; };
 		3D3AF5852182572A00154F72 /* Peliculas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3AF5842182572A00154F72 /* Peliculas.swift */; };
 		3D3AF5872182573C00154F72 /* CellPeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3AF5862182573C00154F72 /* CellPeliculasController.swift */; };
@@ -110,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D0717EF218A0D9400B8FAA0 /* PeliculasDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasDetalle.swift; sourceTree = "<group>"; };
 		3D3AF57B2182571300154F72 /* ListaPeliculasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPeliculasController.swift; sourceTree = "<group>"; };
 		3D3AF5842182572A00154F72 /* Peliculas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peliculas.swift; sourceTree = "<group>"; };
 		3D3AF5862182573C00154F72 /* CellPeliculasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPeliculasController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				3D3AF5842182572A00154F72 /* Peliculas.swift */,
 				3D3AF5862182573C00154F72 /* CellPeliculasController.swift */,
 				3D3E630C21892D03003AD08A /* DatosPelicula.swift */,
+				3D0717EF218A0D9400B8FAA0 /* PeliculasDetalle.swift */,
 			);
 			path = SearchMovie;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				3D3E630D21892D03003AD08A /* DatosPelicula.swift in Sources */,
 				3D3AF5852182572A00154F72 /* Peliculas.swift in Sources */,
 				3D3AF57C2182571300154F72 /* ListaPeliculasController.swift in Sources */,
+				3D0717F0218A0D9400B8FAA0 /* PeliculasDetalle.swift in Sources */,
 				3DEAD0952180C808008148B8 /* ViewController.swift in Sources */,
 				3DEAD0932180C808008148B8 /* AppDelegate.swift in Sources */,
 				3D3AF5872182573C00154F72 /* CellPeliculasController.swift in Sources */,

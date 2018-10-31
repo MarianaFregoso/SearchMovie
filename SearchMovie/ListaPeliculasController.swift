@@ -77,16 +77,22 @@ class ListaPeliculasController : UIViewController, UITableViewDataSource, UITabl
                 }
             }
             
-            func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                return 0
-            }
-            
-            func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                return UITableViewCell()
             
         }
             
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetallePelicula" {
+            let destino = segue.destination as! PeliculaDetalle
+            destino.pelicula = DatosPeliculas.peliculas[(tvPeliculas.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
 
 }
-}
+
