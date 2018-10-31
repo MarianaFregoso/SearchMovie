@@ -9,4 +9,8 @@
 import Foundation
 import UIKit
 
-
+class CellPeliculasController : UITableViewCell{
+    
+    @IBOutlet weak var lbltitulo: UILabel!
+    @IBOutlet weak var lblano: UILabel!
+}

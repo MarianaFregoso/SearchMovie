@@ -11,14 +11,16 @@ import UIKit
 
 class Peliculas {
     var nombre : String
+    var id : String
     var ano : String
     var duracion : String
     var rated : String
     var director :String
     var genero :   String
     
-    init(nombre : String,ano : String, duracion : String, rated : String, director : String, genero : String  ) {
+    init(nombre : String, id : String , ano : String ,  duracion : String, rated : String, director : String, genero : String  ) {
         self.nombre = nombre
+        self.id = id
         self.ano = ano
         self.duracion = duracion
         self.rated = rated
