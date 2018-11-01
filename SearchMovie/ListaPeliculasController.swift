@@ -37,10 +37,9 @@ class ListaPeliculasController : UIViewController, UITableViewDataSource, UITabl
         pelicula = txtPelicula.text!
         
         urlPelicula = "http://www.omdbapi.com/?apikey=cf43d6bc&s=god"
-        urlPelicula = "https://www.omdbapi.com/?apikey=fcf43d6bc&s=god"
         
         if pelicula != "" {
-            urlPelicula = "http://www.omdbapi.com/?apikey=cf43d6bc&s=\(pelicula)"
+            pelicula = pelicula.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
             urlPelicula = "https://www.omdbapi.com/?apikey=cf43d6bc&s=\(pelicula)"
         }
         
