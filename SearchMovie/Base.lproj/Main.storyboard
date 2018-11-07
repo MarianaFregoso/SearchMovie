@@ -303,6 +303,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-mU-DB1">
+                                <rect key="frame" x="0.0" y="449" width="375" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -334,6 +338,7 @@
                         <viewLayoutGuide key="safeArea" id="55M-UL-Bx8"/>
                     </view>
                     <connections>
+                        <outlet property="imgPelicula" destination="WKp-mU-DB1" id="Uz3-bX-fck"/>
                         <outlet property="lblAño" destination="Uvm-2S-CHS" id="mKQ-mr-d4K"/>
                         <outlet property="lblClasificacion" destination="x5P-yJ-964" id="tJt-DJ-wKk"/>
                         <outlet property="lblDirector" destination="BPL-cS-krS" id="Bfn-Xv-agZ"/>
